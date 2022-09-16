@@ -1,0 +1,30 @@
+.mealCard {
+  width: 40rem;
+  margin: 0 auto;
+  > div {
+    background-color: #adacac;
+  }
+  .meal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    > img {
+      border-radius: 50%;
+    }
+    h2 {
+      font-size: 2em;
+      color: #8a2b06;
+    }
+    p {
+      font-size: 1.5rem;
+      //   color: #ad5502;
+      color: #641e03;
+      line-height: 0.5rem;
+    }
+    [id*="back-home"] {
+      margin-top: 2rem;
+    }
+  }
+}
