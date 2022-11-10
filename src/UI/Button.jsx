@@ -1,8 +1,10 @@
 import React from "react";
-import classes from './Button.module.scss';
+import classes from "./Button.module.scss";
 
 export const Button = (props) => {
-    const btnClass = `${classes.button} ${props.alt ? classes.light : classes.regular}`;
+  const btnClass = `${classes.button} ${
+    props.alt ? classes.light : classes.regular
+  }`;
   return (
     <button id={props.id} className={btnClass} onClick={props.onClickHandler}>
       {props.children}

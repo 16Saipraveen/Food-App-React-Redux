@@ -4,7 +4,7 @@ import classes from './Input.module.scss';
 export const Input = forwardRef((props, ref) => {
   return (
     <div className={classes.input}>
-      <label htmlFor={props.input.id}>{props.label}</label>
+      <label data-testid='input-label' htmlFor={props.input.id}>{props.label}</label>
       <input ref={ref} {...props.input} />
     </div>
   );

@@ -9,7 +9,7 @@ export const Header = (props) => {
     <>
       <div className={classes.headerContainer}>
         <header className={classes.header}>
-          <h1 onClick={() => navigate('/')}>ReactMeals</h1>
+          <h1 onClick={() => navigate('/')} data-testid='heading'>ReactMeals</h1>
           <CartButton onClick={props.onShowCart}/>
         </header>
       </div>
